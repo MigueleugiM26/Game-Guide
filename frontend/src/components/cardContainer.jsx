@@ -5,7 +5,6 @@ const CardContainer = () => {
   const [cards, setCards] = useState([]);
   const observerRef = useRef();
 
-  // Simulate loading cards (replace with API call)
   const loadMoreCards = () => {
     const newCards = Array.from({ length: 5 }, (_, i) => ({
       id: cards.length + i,
@@ -13,12 +12,10 @@ const CardContainer = () => {
     setCards((prev) => [...prev, ...newCards]);
   };
 
-  // Load initial cards
   useEffect(() => {
     loadMoreCards();
   }, []);
 
-  // Infinite scroll using IntersectionObserver
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
