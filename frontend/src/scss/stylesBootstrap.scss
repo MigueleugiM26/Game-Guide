@@ -1,0 +1,103 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background-color: #141414;
+}
+
+.header {
+  background-color: #141414;
+  height: 3.5rem;
+  z-index: 1050;
+  border-bottom: #4b4b4b 1px solid;
+
+  h2 {
+    color: #ccc;
+  }
+
+  .searchBar input {
+    background-color: #343d42;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+
+    &::placeholder {
+      color: #ccc;
+    }
+
+    &:focus {
+      outline: #4b4b4b 2px dotted;
+      box-shadow: none;
+    }
+  }
+
+  .createButton {
+    background-color: transparent;
+    font-weight: bolder;
+    color: #ccc;
+    text-align: center;
+    border-radius: 1rem;
+    transition: color 0.25s ease;
+    transition: background-color 0.25s ease;
+
+    &:hover {
+      color: #bebebe;
+    }
+    &:active {
+      color: #141414;
+    }
+  }
+
+  .avatar {
+    cursor: pointer;
+    background-color: #343d42;
+    transition: filter 0.25s ease;
+
+    &:hover {
+      filter: brightness(70%);
+    }
+    &:active {
+      filter: brightness(50%);
+    }
+  }
+}
+
+.cardContainer {
+  margin-top: 5rem;
+  .sortButton {
+    background-color: transparent;
+    font-weight: bolder;
+    color: #ccc;
+    text-align: center;
+    border-radius: 1rem;
+    transition: color 0.25s ease;
+    transition: background-color 0.25s ease;
+    width: 5rem;
+
+    &:hover {
+      color: #bebebe;
+    }
+    &:active {
+      color: #141414;
+    }
+  }
+}
+
+.guideCard {
+  .guideCardImage {
+    width: 35rem;
+    height: 20rem;
+    background-color: #4b4b4b;
+    border-radius: 1rem;
+  }
+
+  h1 {
+    color: #ccc;
+  }
+  h4 {
+    color: #ccc;
+  }
+
+  .guideCardInfo {
+    width: 15rem;
+  }
+}

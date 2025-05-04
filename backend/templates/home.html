@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    {% block css %}
+    <title>Homepage</title>
+    {% endblock %}
+  </head>
+
+  <body>
+    {% block 'dashboard' %}
+    <div id="react-card-container" class="react-card-container m-auto"></div>
+    {% endblock %}
+  </body>
+</html>
