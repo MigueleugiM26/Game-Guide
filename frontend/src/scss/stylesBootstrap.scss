@@ -87,7 +87,20 @@ body {
     width: 35rem;
     height: 20rem;
     background-color: #4b4b4b;
+    overflow: hidden;
+    position: relative;
     border-radius: 1rem;
+  }
+
+  .guideCardThumbnail {
+    width: 35rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  .censored {
+    filter: blur(50px);
   }
 
   h1 {
@@ -98,6 +111,6 @@ body {
   }
 
   .guideCardInfo {
-    width: 15rem;
+    width: 35rem;
   }
 }

@@ -21,7 +21,9 @@ const Header = () => {
               placeholder="Search Guides"
             />
           </div>
-          <button className="createButton btn btn-light">+create</button>
+          <a href="/new-guide/">
+            <button className="createButton btn btn-light">+create</button>
+          </a>
         </div>
 
         <div className="d-flex align-items-center gap-3">
